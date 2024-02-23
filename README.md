@@ -5,14 +5,29 @@ This is a [LlamaIndex](https://www.llamaindex.ai/) project using [Next.js](https
 First, install the dependencies:
 
 ```
-npm install
+pnpm install
 ```
 
-Second, run the development server:
+Second, set environment variables:
 
 ```
-npm run dev
+MODEL=gpt-3.5-turbo-0125
+NEXT_PUBLIC_MODEL=gpt-3.5-turbo-0125
+OPENAI_API_KEY=
 ```
+
+Third, run the development server:
+
+```
+pnpm run dev
+```
+
+Optional, run this command to generate embedding data:
+
+```
+pnpm run generate
+```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
